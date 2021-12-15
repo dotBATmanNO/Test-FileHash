@@ -8,7 +8,7 @@ IF NOT EXIST "%1" GOTO ERR1
 :Launch
 ECHO Calculating Hash . . .
 ECHO.
-FOR /F %%f in ('PowerShell -NoProfile -Command "& { (Get-Filehash -Path %1).Hash }"') do SET HashCalc=%%f
+FOR /F %%f in ('PowerShell -NoProfile -Command "& { (Get-Filehash -Path '%1').Hash }"') do SET HashCalc=%%f
 IF "%HashCalc%"=="" GOTO ERR2
 ECHO Your file has been processed.
 ECHO       File : %1
