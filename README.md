@@ -2,7 +2,7 @@
 A .bat file that will let you drop a file onto it to generate and optionally validate SHA256 hash.
 
 It will also work from commandline for automated tests;
-Test-FileHash.bat filename SHA256hash
+`Test-FileHash.bat filename SHA256hash`
 - Errorlevel 1 returned if script execution or validation fails.
 - Errorlevel 0 returned if validation is true or skipped.
 
