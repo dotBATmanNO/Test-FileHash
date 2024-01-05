@@ -34,7 +34,7 @@ REM Validate Input
 ECHO ------------------------------------------------------------------------------
 ECHO Calculated : %HashCalc%
 ECHO   Provided : %HashValidate%
-IF "%HashCalc%"=="%HashValidate%" (
+IF /I "%HashCalc%"=="%HashValidate%" (
   ECHO     Result : OK!
   SET HashResult=0
   ) ELSE (
